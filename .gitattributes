@@ -1,0 +1,5 @@
+# Keep the repository text files in LF; mark the committed data artefacts as binary.
+* text=auto eol=lf
+*.npz binary
+*.pdf binary
+*.png binary

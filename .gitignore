@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Generated data and checkpoints are not distributed (see README "Data and models");
+# regenerate them with the scripts in data_gen/ and train/.
+data/*
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+
+# Attack outputs written next to the drivers
+blue_result/
+red_result/
+final_result/
+
+# Solver / logs
+*.log
+*.lp
+*.sol
+gurobi*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# The validation sweep results are committed on purpose
+!data/validation/
+!data/validation/*.npz
+!data/validation/*.pdf
+!data/validation/*.png
+
+# IDE
+.idea/
+.vscode/
